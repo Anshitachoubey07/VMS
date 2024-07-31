@@ -1,0 +1,40 @@
+<%- include("partials/header") -%>
+
+<h1>Add Visitor</h1>
+<form action="/compose", method="post">
+      <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Name</label>
+        <input type="text" name="text" id="disabledTextInput" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Building</label>
+        <div>
+            <textarea name="post" id="" cols="160" rows="1"></textarea>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Floor</label>
+        <div>
+            <textarea name="post" id="" cols="160" rows="1"></textarea>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Flat No.</label>
+        <div>
+            <textarea name="post" id="" cols="160" rows="1"></textarea>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Owner</label>
+        <div>
+            <textarea name="post" id="" cols="160" rows="1"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" style="margin : 20px;">Add</button>
+</form>
+
+<%- include("partials/footer") -%>

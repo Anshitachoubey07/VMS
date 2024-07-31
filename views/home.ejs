@@ -1,0 +1,36 @@
+<%- include("partials/header") -%>
+
+<h1>All Visitor</h1>
+
+<p><%= firstPara %></p>
+
+<!-- <% for (let i = 0; i < changes.length; i++) { %>
+    <% console.log(changes[i].title); %>
+    
+<% }; %> -->
+
+<!-- <% changes.forEach(function(change){ %>
+   <% console.log(change.title); %>
+<% }) %> -->
+
+
+
+<% changes.forEach(function(change){ %>
+    <h3>Name - <%= change.title %></h3>
+
+    <P>Building/Floor/Flat No./Owner - 
+     <%=  change.content %>
+    </P> 
+
+    <!-- <p>
+        <%=  change.floor %>
+    </p>
+
+    <p>
+        <%=  change.owner %>
+    </p> -->
+    <%= new Date();%>
+    
+ <% }) %>
+
+<%- include("partials/footer") -%>
